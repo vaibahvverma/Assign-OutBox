@@ -9,7 +9,7 @@ interface ProvidersProps {
 
 export default function Providers({ children }: ProvidersProps) {
     return (
-        // @ts-expect-error - React 19 compatibility issue with next-auth
+        // @ts-ignore
         <SessionProvider>
             {children}
             <Toaster position="top-right" />
